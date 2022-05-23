@@ -1,14 +1,12 @@
 package com.example.calculator.calculator;
 
-public class Calculator {
+import com.example.calculator.calculator.interaces.Sum;
 
-    public int sum(int x, int y) {
+public class Calculator implements Sum {
+
+
+    @Override
+    public Integer sum(Integer x, Integer y) {
         return x + y;
     }
-
-    public int subtract(int x, int y) {
-        return x - y;
-    }
-
-
 }
