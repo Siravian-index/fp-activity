@@ -1,18 +1,24 @@
 package com.example.calculator.calculator;
 
+import com.example.calculator.calculator.interaces.Subtract;
 import com.example.calculator.calculator.interaces.Sum;
 
 public class Main {
 
     public static void main(String[] args) {
-        Calculator calculator = new Calculator();
-        Integer result = sumNumbers(calculator, 6, 6);
+        Integer integer = sumNumbers((x, y) -> x + y );
+        Integer result = subtractNumbers((x, y) -> x - y);
+
+        System.out.println(integer);
         System.out.println(result);
-//        sumNumbers(() -> )
     }
 
 
-    public static Integer sumNumbers(Sum calculator, Integer x, Integer y) {
-        return calculator.sum(x, y);
+    public static Integer sumNumbers(Sum calculator) {
+        return calculator.sum(10,5);
+    }
+
+    public static Integer subtractNumbers(Subtract calculator) {
+        return  calculator.subtract(10, 5);
     }
 }
