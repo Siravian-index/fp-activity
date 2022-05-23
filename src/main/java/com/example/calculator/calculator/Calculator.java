@@ -23,6 +23,14 @@ public class Calculator {
     }
 
     public Integer divide(Integer x, Integer y) {
-        return 0;
+        if (y == 0) {
+            throw new ArithmeticException();
+        } else if (x - y == 0) {
+            return 1;
+        } else if (x < y) {
+            return 0;
+        } else {
+            return (1 + divide(x - y, y));
+        }
     }
 }
