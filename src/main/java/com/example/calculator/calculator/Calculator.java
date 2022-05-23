@@ -11,7 +11,11 @@ public class Calculator {
     }
 
     public Integer subtract(Integer x, Integer y) {
-        return 0;
+        if (y == 0) {
+            return x;
+        } else {
+            return subtract((x - 1), (y - 1));
+        }
     }
 
     public Integer multiply(Integer x, Integer y) {
