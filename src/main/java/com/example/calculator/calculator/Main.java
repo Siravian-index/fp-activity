@@ -9,7 +9,6 @@ public class Main {
         Subtract subtract = ((x, y) -> x - y);
         Sum sum = ((x, y) -> x + y);
 
-//        System.out.println(sum.sum(5, 5));
     }
 
 }
