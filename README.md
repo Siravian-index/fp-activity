@@ -50,8 +50,8 @@ public class Calculator {
     }
 }
 ```
-
-All test are passing:
+---
+All test are passing:\
 ![test](./src/docs/img/sumSuccessfully.png)
 ![test](./src/docs/img/subtractSuccessfully.png)
 ![test](./src/docs/img/multiplySuccessfully.png)
