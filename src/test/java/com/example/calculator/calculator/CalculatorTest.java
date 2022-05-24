@@ -41,9 +41,15 @@ class CalculatorTest {
 
     @Test
     void multiplySuccessfully() {
-        assertEquals(10, underTest.divide(5, 2));
-        assertEquals(25, underTest.divide(5, 5));
-        assertEquals(-100, underTest.divide(50, -2));
+        assertEquals(10, underTest.multiply(5, 2));
+        assertEquals(25, underTest.multiply(5, 5));
+        assertEquals(-100, underTest.multiply(50, -2));
+    }
+
+    void factorialSuccessfully() {
+        assertEquals(120, underTest.factorial(5));
+        assertEquals(720, underTest.factorial(6));
+        assertEquals(362880, underTest.factorial(9));
     }
 
 
