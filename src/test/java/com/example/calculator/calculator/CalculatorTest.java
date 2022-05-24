@@ -46,6 +46,7 @@ class CalculatorTest {
         assertEquals(-100, underTest.multiply(50, -2));
     }
 
+    @Test
     void factorialSuccessfully() {
         assertEquals(120, underTest.factorial(5));
         assertEquals(720, underTest.factorial(6));
